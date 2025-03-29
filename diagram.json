@@ -1,0 +1,140 @@
+{
+    "version": 1,
+    "author": "Hùng Anh Nguyễn",
+    "editor": "wokwi",
+    "parts": [
+      {
+        "type": "wokwi-arduino-uno",
+        "id": "uno",
+        "top": 6.6,
+        "left": 87.8,
+        "rotate": 90,
+        "attrs": {}
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led1",
+        "top": -32.4,
+        "left": 464.6,
+        "attrs": { "color": "red" }
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led2",
+        "top": -32.4,
+        "left": 531.8,
+        "attrs": { "color": "red" }
+      },
+      { "type": "wokwi-led", "id": "led3", "top": -32.4, "left": 599, "attrs": { "color": "red" } },
+      {
+        "type": "wokwi-led",
+        "id": "led4",
+        "top": 18.4,
+        "left": 414.2,
+        "rotate": 270,
+        "attrs": { "color": "red" }
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led5",
+        "top": 66.4,
+        "left": 414.2,
+        "rotate": 270,
+        "attrs": { "color": "red" }
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led6",
+        "top": 114.4,
+        "left": 414.2,
+        "rotate": 270,
+        "attrs": { "color": "red" }
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led7",
+        "top": 155.2,
+        "left": 465,
+        "rotate": 180,
+        "attrs": { "color": "red" }
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led8",
+        "top": 155.2,
+        "left": 532.2,
+        "rotate": 180,
+        "attrs": { "color": "red" }
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led9",
+        "top": 155.2,
+        "left": 589.8,
+        "rotate": 180,
+        "attrs": { "color": "red" }
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led10",
+        "top": 123.6,
+        "left": 649.8,
+        "rotate": 90,
+        "attrs": { "color": "red" }
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led11",
+        "top": 75.6,
+        "left": 649.8,
+        "rotate": 90,
+        "attrs": { "color": "red" }
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led12",
+        "top": 27.6,
+        "left": 649.8,
+        "rotate": 90,
+        "attrs": { "color": "red" }
+      }
+    ],
+    "connections": [
+      [ "uno:GND.1", "led4:C", "black", [ "h38.4", "v0.3", "h105.6", "v-28.8" ] ],
+      [ "led4:C", "led1:C", "black", [ "h28.8", "v-58" ] ],
+      [ "led1:C", "led2:C", "black", [ "v19.2", "h67.6" ] ],
+      [ "led2:C", "led3:C", "black", [ "v19.2", "h58" ] ],
+      [ "led3:C", "led12:C", "black", [ "v38.4", "h0.4" ] ],
+      [ "led12:C", "led11:C", "black", [ "h-19.2", "v58" ] ],
+      [ "led11:C", "led10:C", "black", [ "h-19.2", "v48.4" ] ],
+      [ "led10:C", "led9:C", "black", [ "h-38.4", "v0.4" ] ],
+      [ "led9:C", "led8:C", "black", [ "v-28.8", "h-0.4" ] ],
+      [ "led8:C", "led7:C", "black", [ "v-28.8", "h-67.6", "v28.8" ] ],
+      [ "led7:C", "led6:C", "black", [ "v0" ] ],
+      [ "led6:C", "led5:C", "black", [ "h19.2", "v-48.4" ] ],
+      [ "led5:C", "led4:C", "black", [ "h19.2", "v-58" ] ],
+      [ "uno:0", "led3:A", "green", [ "h38.4", "v33.1", "h364.8", "v-230.4", "h-105.6" ] ],
+      [ "led12:A", "uno:1", "green", [ "h-9.6", "v19.2", "h67.2", "v172.8", "h-345.6", "v-28.8" ] ],
+      [ "uno:2", "led11:A", "green", [ "h57.6", "v32.9", "h326.4", "v-115.2", "h-57.6", "v-9.6" ] ],
+      [ "led10:A", "uno:3", "green", [ "h0", "v9.6", "h38.4", "v57.6", "h-307.2", "v-28.8" ] ],
+      [ "led9:A", "uno:4", "green", [ "v-9.6", "h-9.6", "v57.6", "h-201.6", "v-23.1" ] ],
+      [ "uno:5", "led8:A", "green", [ "h86.4", "v23", "h134.4", "v-28.8" ] ],
+      [ "led7:A", "uno:6", "green", [ "v0", "h-9.6", "v19.2", "h-57.6", "v-28.8" ] ],
+      [ "uno:7", "led6:A", "green", [ "h96", "v-34.8", "h48", "v9.6" ] ],
+      [ "uno:8", "led5:A", "green", [ "h86.4", "v-66.8", "h57.6", "v9.6" ] ],
+      [ "uno:9", "led4:A", "green", [ "h76.8", "v-104.8", "h67.2", "v9.6" ] ],
+      [
+        "uno:10",
+        "led1:A",
+        "green",
+        [ "h67.2", "v-104.9", "h76.8", "v-48", "h38.4", "v48", "h-9.6" ]
+      ],
+      [
+        "uno:11",
+        "led2:A",
+        "green",
+        [ "h57.6", "v-105", "h76.8", "v-48", "h115.2", "v57.6", "h-9.6" ]
+      ]
+    ],
+    "dependencies": {}
+  }
